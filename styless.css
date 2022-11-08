@@ -58,7 +58,7 @@ ul.show{
 .header{
     position: relative;
     width: 90%;
-    height: 500px;
+    height: 408px;
     margin: 0 auto ;
     display: grid;
     grid-template-columns:repeat(2,  1fr );   
@@ -76,7 +76,7 @@ input{
 
 }
 .header-btn{
-    width: auto;
+    width: 150px;
     height: auto;
     padding: 5px;
     border-radius: 10px;
@@ -118,4 +118,32 @@ input{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.3em;
+ }
+ .contenedor-about{
+    background-color: #31333B;
+    width: 100%;
+    
+ }
+ .aboutme{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+ }
+ .about-tittle h2{
+    padding-bottom: 20px;
+ }
+ .about-linea{
+    width: 5%;
+    height: 2px;
+    background-color: #FFC86B;
+ }
+ .about-cuerpoparrafo{
+   width: 90%;
+}
+
+ .about-parrafo{
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    font-family: 'Unna', serif;
  }
