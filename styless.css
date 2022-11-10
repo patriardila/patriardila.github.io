@@ -20,7 +20,7 @@ body{
     margin: 0 auto ;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     
     
 }
@@ -57,35 +57,40 @@ ul.show{
 
 .header{
     position: relative;
-    width: 90%;
+    width: 70%;
     height: 408px;
     margin: 0 auto ;
     display: grid;
-    grid-template-columns:repeat(2,  1fr );   
+    grid-template-columns:repeat(2,  300px ); 
+    justify-content: center;  
 }
-.nav__label{
-    display: none;
-}
-input{
-    display: none;
-}
+
+
 .header-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
+}
+.header-photo img {
+    grid-column: 2/-1;
+    position: absolute;
+    right: -180px;
+   
 }
 .header-btn{
     width: 150px;
     height: auto;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     border: 2px solid #FFC86B;
     background-color: transparent;
     color: #FFC86B;
     font-family: 'Montserrat', sans-serif; 
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 40px;
+    
     
 
 }
@@ -97,8 +102,8 @@ input{
     grid-column: 2/3;
     grid-row: 1/2;
     position: absolute;
-    right: 200px;
-    bottom: 96px;
+    right: 1px;
+    bottom: 10px;
    
 }
 .linea-redes{
@@ -110,14 +115,14 @@ input{
     word-spacing: 10px;
 }
  .header-text-name span{
-    font-size: 1.8em;
+    font-size: 2.2em;
     color: #FFC86B;
  }
 
  .header-text-profession{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1em;
  }
  .contenedor-about{
     background-color: #31333B;
@@ -131,6 +136,7 @@ input{
  }
  .about-tittle h2{
     padding-bottom: 20px;
+    font-size: 2.2em;
  }
  .about-linea{
     width: 5%;
@@ -146,4 +152,70 @@ input{
     gap: 10px;
     justify-content: start;
     font-family: 'Unna', serif;
+ }
+ .skill{
+    background-color: #31333B;
+    width: 100%;
+
+ }
+ .skill-container{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 30px;
+    justify-content: center;
+    
+ } 
+ .skill-tittle h2{
+    text-align: center;
+    font-size: 2.2em;
+ }
+ 
+ .skill-img{
+    width: 140px;
+    height: 140px;
+    background-color: #57585A;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+ }
+.skill-img img{
+    width: 100px;
+}
+.skill-img1 img{
+    width: 40px ;
+}
+.skill-img1{
+    width: 140px;
+    height: 140px;
+    background-color: #57585A;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .skill-img1:hover{
+    background-color: #FFC86B;
+ }
+ .skill-img:hover{
+    background-color: #FFC86B;
+ }
+ .skill-img1 p{
+    font-family: 'Unna', serif;
+    padding-top: 10px;
+
+ }
+ .portfolio{
+    background-color: #31333B;
+    width: 100%;
+ }
+ .portfolio-imagen img{
+    width: 400px;
  }
